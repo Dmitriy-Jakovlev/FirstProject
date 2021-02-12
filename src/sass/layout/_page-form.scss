@@ -1,0 +1,266 @@
+@import '../components/button-styles';
+
+.page-form {
+  display: block;
+
+  &__title {
+    margin: 0 auto;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-color-dark-theme;
+  }
+  &__free {
+    color: $accent-color;
+  }
+  &__consultation {
+    color: $accent-color;
+  }
+  &__subtitle {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.08em;
+    margin: 0 auto;
+    color: $title-color-dark-theme;
+  }
+  &__free-lessons {
+    color: $accent-color;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__input {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: transparent;
+    color: $title-color-dark-theme;
+    outline: none;
+  }
+  &__input::placeholder {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+@media screen and (max-width: 320px) {
+  .page-form {
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(17, 21, 24, 0.7),
+        rgba(17, 21, 24, 0.7)
+      ),
+      url(..\images\mobile\registration-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__title {
+      font-size: 14px;
+      line-height: 1.4;
+      margin-bottom: 30px;
+    }
+    &__subtitle {
+      font-size: 12px;
+      line-height: 1.25;
+      margin-bottom: 30px;
+    }
+    &__input {
+      min-height: 48px;
+      padding-left: 28px;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 50px;
+      }
+      &::placeholder {
+        font-size: 14px;
+        line-height: 1.21;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 479px) {
+  .page-form {
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(17, 21, 24, 0.7),
+        rgba(17, 21, 24, 0.7)
+      ),
+      url(..\images\mobile\registration-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__title {
+      font-size: 14px;
+      line-height: 1.4;
+      width: 280px;
+      margin-bottom: 30px;
+    }
+    &__subtitle {
+      font-size: 12px;
+      line-height: 1.25;
+      width: 280px;
+      margin-bottom: 30px;
+    }
+    &__input {
+      width: 280px;
+      height: 48px;
+      padding-left: 28px;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 50px;
+      }
+      &::placeholder {
+        font-size: 14px;
+        line-height: 1.21;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .page-form {
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(17, 21, 24, 0.7),
+        rgba(17, 21, 24, 0.7)
+      ),
+      url(..\images\tablet\registration-tablet.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__title {
+      font-size: 14px;
+      line-height: 1.4;
+      width: 440px;
+      margin-bottom: 30px;
+    }
+    &__subtitle {
+      font-size: 12px;
+      line-height: 1.25;
+      width: 440px;
+      margin-bottom: 30px;
+    }
+    &__input {
+      width: 440px;
+      height: 48px;
+      padding-left: 28px;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 50px;
+      }
+      &::placeholder {
+        font-size: 14px;
+        line-height: 1.21;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1299px) {
+  .page-form {
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(17, 21, 24, 0.7),
+        rgba(17, 21, 24, 0.7)
+      ),
+      url(..\images\tablet\registration-tablet.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    &__title {
+      font-size: 26px;
+      line-height: 1.3;
+      width: 688px;
+      margin-bottom: 30px;
+    }
+    &__subtitle {
+      font-size: 14px;
+      line-height: 1.21;
+      width: 452px;
+      margin-bottom: 40px;
+    }
+    &__input {
+      width: 390px;
+      height: 48px;
+      padding-left: 28px;
+      margin-right: 189px;
+      margin-left: 189px;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 30px;
+      }
+      &::placeholder {
+        font-size: 14px;
+        line-height: 1.21;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .page-form {
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(17, 21, 24, 0.7),
+        rgba(17, 21, 24, 0.7)
+      ),
+      url(..\images\desktop\registration-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 62px;
+    &__title {
+      font-size: 46px;
+      line-height: 1.3;
+      width: 1090px;
+      margin-bottom: 50px;
+    }
+    &__subtitle {
+      font-size: 30px;
+      line-height: 1.23;
+      width: 1090px;
+      margin-bottom: 56px;
+    }
+    &__input {
+      width: 478px;
+      height: 70px;
+      padding-left: 40px;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 80px;
+      }
+      &::placeholder {
+        font-size: 20px;
+        line-height: 1.2;
+      }
+    }
+  }
+}

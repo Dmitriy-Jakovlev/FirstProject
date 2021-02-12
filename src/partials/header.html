@@ -1,0 +1,77 @@
+<header class="page-header">
+    <div class="container">
+        <nav class="page-header__nav">
+
+            <a class="page-header__logo-main" href="index.html" logo-menu>
+            
+                <svg class="page-header__logo-main-icon">
+                    <use href="./images/svg/sprite.svg#logo"></use>
+                </svg>
+            
+            </a>
+
+            <button class="btn_sign tablet">Консультация по телефону</button>
+            <button type="button" class="page-header__menu-btn" aria-expanded="false" aria-controls="page-header__menu" data-menu-button>
+                <svg width="40px" height="40px" aria-label="Мобильное меню">
+                    <use class="icon-close" href="./images/header-sprite.svg#close"></use>
+                    <use class="icon-menu" href="./images/header-sprite.svg#menu"></use>
+                </svg>
+            </button>
+
+            <div class="page-header__menu" id="page-header__menu" data-menu>
+                <a class="page-header__logo-menu" href="index.html" logo-menu>
+                
+                    <svg class="page-header__logo-menu-icon">
+                        <use href="./images/header-sprite.svg#logo-menu"></use>
+                    </svg>
+                
+                </a>
+                <ul class="page-header__list list">
+                    <li class="page-header__item">
+                        <a class="page-header__link link" href="#programm">Программы обучения</a>
+                    </li>
+                    <li class="page-header__item">
+                        <a class="page-header__link link" href="#about">О нас</a>
+                    </li>
+                    <li class="page-header__item">
+                        <a class="page-header__link link" href="#education">Варианты обучения</a>
+                    </li>
+                    <li class="page-header__item">
+                        <a class="page-header__link link" link href="#contact">Контакты</a>
+                    </li>
+                </ul>
+                <button class="btn_sign">Консультация по телефону</button>
+            </div>            
+        </nav>
+    </div>   
+</header>
+
+<!-- MODAL -->
+
+    <div class="modal-window_entry">
+        <div class="page-form">
+            <button class="close-entry" data-modal-close>
+                <svg class="cls-btn" width="18px" height="18px">
+                    <use href="./images/header-sprite.svg#close-btn"></use>
+                </svg>
+            </button>
+            <h2 class="page-form__title"><span class="page-form__free">Заявка</span> на телефонную
+                <span class="page-form__consultation">консультацию</span> по
+                нюансам ЗНО
+                по английскому языку</h2>
+            <p class="page-form__subtitle">Оставь контактные данные, <br>
+                С вами свяжется консультант и ответит на все вопросы</p>
+            <form action="#" method="GET" class="page-form__form">
+        
+                <Input class="page-form__input" type="text" name="user-name" minlength="2" required placeholder="Имя*">
+                </Input>
+        
+                <Input class="page-form__input" type="tel" name="user-tel" required placeholder="Телефон*">
+                </Input>
+        
+                <button class="page-form__btn" type="submit">Позвоните мне</button>
+        
+            </form>
+        </div>
+    </div>
+</div>
